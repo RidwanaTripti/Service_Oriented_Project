@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:service_oriented_project/select_box/select_division.dart';
 
 class NextScreen extends StatefulWidget {
   const NextScreen({super.key});
@@ -32,7 +33,12 @@ class _NextScreenState extends State<NextScreen> {
                 width: 150.0,
                 color: HexColor("FFBFD9CF"),
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return SelectDivision();
+                    }));
+                  },
                   child: Text(
                     "বিভাগ",
                     style: TextStyle(

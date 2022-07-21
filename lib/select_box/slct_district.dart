@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:service_oriented_project/screens/nxt_screen.dart';
-import 'package:service_oriented_project/select_box/slct_district.dart';
 
-class SelectDivision extends StatefulWidget {
-  const SelectDivision({super.key});
+import '../screens/nxt_screen.dart';
+
+class SelectDistrict extends StatefulWidget {
+  const SelectDistrict({super.key});
 
   @override
-  State<SelectDivision> createState() => _SelectDivisionState();
+  State<SelectDistrict> createState() => _SelectDistrictState();
 }
 
-class _SelectDivisionState extends State<SelectDivision> {
-  bool isSelected = false;
+class _SelectDistrictState extends State<SelectDistrict> {
   @override
   Widget build(BuildContext context) {
+    bool isSelected = false;
     return Scaffold(
       body: Center(
         child: Expanded(
@@ -36,7 +36,7 @@ class _SelectDivisionState extends State<SelectDivision> {
                         },
                       ),
                       GestureDetector(
-                        child: Text("ঢাকা"),
+                        child: Text("ময়মনসিংহ"),
                         onTap: () {
                           setState() {
                             isSelected = !isSelected;
@@ -54,14 +54,10 @@ class _SelectDivisionState extends State<SelectDivision> {
                           setState() {
                             //  isSelected = !isSelected;
                           }
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: ((context) {
-                            return SelectDistrict();
-                          })));
                         },
                       ),
                       GestureDetector(
-                        child: Text("ময়মনসিংহ"),
+                        child: Text("নেত্রকোণা"),
                         onTap: () {
                           setState() {
                             isSelected = !isSelected;
@@ -82,28 +78,7 @@ class _SelectDivisionState extends State<SelectDivision> {
                         },
                       ),
                       GestureDetector(
-                        child: Text("সিলেট"),
-                        onTap: () {
-                          setState() {
-                            isSelected = !isSelected;
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Checkbox(
-                        value: isSelected,
-                        onChanged: (isSelected) {
-                          setState() {
-                            //isSelected =!isSelected;
-                          }
-                        },
-                      ),
-                      GestureDetector(
-                        child: Text("বরিশাল"),
+                        child: Text("হালুয়াঘাট"),
                         onTap: () {
                           setState() {
                             isSelected = !isSelected;
@@ -124,70 +99,7 @@ class _SelectDivisionState extends State<SelectDivision> {
                         },
                       ),
                       GestureDetector(
-                        child: Text("চট্টগ্রাম"),
-                        onTap: () {
-                          setState() {
-                            isSelected = !isSelected;
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Checkbox(
-                        value: isSelected,
-                        onChanged: (isSelected) {
-                          setState() {
-                            //isSelected =!isSelected;
-                          }
-                        },
-                      ),
-                      GestureDetector(
-                        child: Text("রংপুর"),
-                        onTap: () {
-                          setState() {
-                            isSelected = !isSelected;
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Checkbox(
-                        value: isSelected,
-                        onChanged: (isSelected) {
-                          setState() {
-                            // isSelected = !isSelected;
-                          }
-                        },
-                      ),
-                      GestureDetector(
-                        child: Text("খুলনা"),
-                        onTap: () {
-                          setState() {
-                            isSelected = !isSelected;
-                          }
-                        },
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Checkbox(
-                        value: isSelected,
-                        onChanged: (isSelected) {
-                          setState() {
-                            // isSelected = !isSelected;
-                          }
-                        },
-                      ),
-                      GestureDetector(
-                        child: Text("রাজশাহী"),
+                        child: Text("জামালপুর"),
                         onTap: () {
                           setState() {
                             isSelected = !isSelected;
