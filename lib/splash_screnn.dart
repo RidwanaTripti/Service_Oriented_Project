@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
       backgroundColor: HexColor("#FFBFD9CF"),
       //backgroundColor: HexColor("#FFEED9CD"),
-      duration: 5000,
+      duration: 3000,
       animationDuration: Duration(seconds: 2),
       //splashTransition: SplashTransition.scaleTransition,
       nextScreen: NextScreen(),

@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:service_oriented_project/select_box/slct_area.dart';
+import 'package:service_oriented_project/select_box/slct_district.dart';
 
 import '../screens/nxt_screen.dart';
 
-class SelectDistrict extends StatefulWidget {
-  const SelectDistrict({super.key});
+class SelectSubDistrict extends StatefulWidget {
+  const SelectSubDistrict({super.key});
 
   @override
-  State<SelectDistrict> createState() => _SelectDistrictState();
+  State<SelectSubDistrict> createState() => _SelectSubDistrictState();
 }
 
-class _SelectDistrictState extends State<SelectDistrict> {
+class _SelectSubDistrictState extends State<SelectSubDistrict> {
+  bool isSelected = false;
   @override
   Widget build(BuildContext context) {
-    bool isSelected = false;
     return Scaffold(
       body: Center(
         child: Container(
@@ -35,7 +37,7 @@ class _SelectDistrictState extends State<SelectDistrict> {
                       },
                     ),
                     GestureDetector(
-                      child: Text("ময়মনসিংহ"),
+                      child: Text("ভালুকা"),
                       onTap: () {
                         setState() {
                           isSelected = !isSelected;
@@ -56,7 +58,7 @@ class _SelectDistrictState extends State<SelectDistrict> {
                       },
                     ),
                     GestureDetector(
-                      child: Text("নেত্রকোণা"),
+                      child: Text("ত্রিশাল"),
                       onTap: () {
                         setState() {
                           isSelected = !isSelected;
@@ -98,7 +100,7 @@ class _SelectDistrictState extends State<SelectDistrict> {
                       },
                     ),
                     GestureDetector(
-                      child: Text("জামালপুর"),
+                      child: Text("মুক্তাগাছা"),
                       onTap: () {
                         setState() {
                           isSelected = !isSelected;
