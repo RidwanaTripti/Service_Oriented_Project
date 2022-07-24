@@ -44,6 +44,8 @@ class _NextScreenState extends State<NextScreen> {
                         style: TextStyle(color: HexColor("#0000")),
                       ),
                       DropDown(),
+                      
+                     
                     ],
                   ),
                 ),
@@ -109,7 +111,7 @@ class _NextScreenState extends State<NextScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("আমাদের সেবা সমূহ"),
-                      Icon(Icons.arrow_forward)
+                   Icon(Icons.arrow_forward)
                     ],
                   ),
                 ),

@@ -27,8 +27,9 @@ class _DropDownState extends State<DropDown> {
           .map((items) => DropdownMenuItem(value: items, child: Text(items)))
           .toList(),
       onChanged: (item) {
+        print(item);
         setState(() {
-          dropdownvalue = items as String;
+          dropdownvalue = item as String;
         });
       },
     );
@@ -60,7 +61,7 @@ class _DropDistrictState extends State<DropDistrict> {
           .toList(),
       onChanged: (item) {
         setState(() {
-          dropdownvalue = items as String;
+          dropdownvalue = item as String;
         });
       },
     );
@@ -92,7 +93,7 @@ class _DropSubDisState extends State<DropSubDis> {
           .toList(),
       onChanged: (item) {
         setState(() {
-          dropdownvalue = items as String;
+          dropdownvalue = item as String;
         });
       },
     );
@@ -126,7 +127,7 @@ class _DropAreaState extends State<DropArea> {
           .toList(),
       onChanged: (item) {
         setState(() {
-          dropdownvalue = items as String;
+          dropdownvalue = item as String;
         });
       },
     );
