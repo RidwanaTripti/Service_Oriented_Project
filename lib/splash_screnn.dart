@@ -15,9 +15,14 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
       splash: Container(
-        child: Text(
-          "স্বাগতম",
-          style: TextStyle(color: Colors.black, fontSize: 30.0),
+        child: Column(
+          children: [
+            Image(image:AssetImage("")),
+            Text(
+              "স্বাগতম",
+              style: TextStyle(color: Colors.black, fontSize: 30.0),
+            ),
+          ],
         ),
       ),
       backgroundColor: HexColor("#FFBFD9CF"),
